@@ -1,3 +1,4 @@
+import 'package:plant_store/Src/Pages/Detail/DetailProduct.dart';
 import 'package:plant_store/Src/Utils/Export_Widgets.dart';
 
 class ProductList extends StatelessWidget {
@@ -28,7 +29,7 @@ class ProductList extends StatelessWidget {
   ) {
     return GestureDetector(
       onTap: press = ()=>Navigator.push(context, MaterialPageRoute(builder: (context) => DetailProduct(
-        product: products
+        product: products[index],
       ))),
           child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: kdefaulpadding / 2),

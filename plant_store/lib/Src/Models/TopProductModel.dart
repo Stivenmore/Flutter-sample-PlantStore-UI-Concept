@@ -1,5 +1,4 @@
 class TopProduct {
-  final List<String> imageT;
   final String name, type, image, description, imageT1, imageT2;
   final double price;
   final int id;
@@ -8,7 +7,6 @@ class TopProduct {
     this.imageT1,
     this.imageT2,
     this.image,
-    this.imageT,
     this.name,
     this.type,
     this.price,

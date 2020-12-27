@@ -14,7 +14,6 @@ class _HomePageState extends State<HomePage> {
   _HomePageState({this.product});
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
         body: Column(
@@ -23,7 +22,7 @@ class _HomePageState extends State<HomePage> {
             Search(),
             SizedBox(height: kdefaulpadding),
             Top(),
-            ProductList(),
+            ProductList(product: product,),
             SizedBox(height: kdefaulpadding),
             NewRelease(),
             ListRelease(),

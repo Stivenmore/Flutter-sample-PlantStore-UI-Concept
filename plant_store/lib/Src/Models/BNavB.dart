@@ -1,4 +1,3 @@
-import 'package:plant_store/Src/Utils/Export_Widgets.dart';
 
 class BottomNavBar {
   final String path;
